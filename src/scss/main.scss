@@ -44,9 +44,15 @@ h1 {
 .box.change-color {
   background: var(--yellow-color);
 }
+.box.change-color.is-active {
+  background: var(--blue-color);
+}
 
 .box.toggle-color {
   background: var(--orange-color);
+}
+.box.toggle-color.is-active {
+  background: var(--red-color);
 }
 
 .box.trigger {
@@ -55,6 +61,9 @@ h1 {
 
 .box.target {
   background: var(--red-color);
+}
+.box.target.is-active {
+  opacity: 0;
 }
 
 .box.trigger-all {
