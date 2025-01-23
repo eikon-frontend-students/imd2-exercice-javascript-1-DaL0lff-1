@@ -21,3 +21,17 @@ function targetActive() {
   boxTrigger.classList.toggle("is-active");
 }
 boxTarget.addEventListener("click", targetActive);
+
+var boxTriggerAllSelf = document.querySelector(".trigger-all-self");
+var boxTriggerAll = document.querySelector(".trigger-all");
+
+boxTriggerAll.addEventListener("click", changeYellow);
+boxTriggerAll.addEventListener("click", changeColor);
+
+boxTriggerAllSelf.addEventListener("click", changeYellow);
+boxTriggerAllSelf.addEventListener("click", changeColor);
+
+function allSelf() {
+  boxTriggerAllSelf.classList.toggle("is-active");
+}
+boxTriggerAllSelf.addEventListener("click", allSelf);

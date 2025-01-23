@@ -58,6 +58,9 @@ h1 {
 .box.trigger {
   background: var(--violet-color);
 }
+.box.trigger.is-active {
+  opacity: 0;
+}
 
 .box.target {
   background: var(--red-color);
@@ -72,4 +75,7 @@ h1 {
 
 .box.trigger-all-self {
   background: var(--blue-color);
+}
+.box.trigger-all-self.is-active {
+  background: var(--green-color);
 }
